@@ -1,0 +1,17 @@
+<p>Nombre del emp; {{nombre}}</p>
+
+<p>Apellido del emp; {{apellido}}</p>
+
+<p>Edad del emp; {{getEdad()}}</p>
+
+<p>Empresa del emp; {{empresa}}</p>
+
+Introduce la empresa <input type="text" [(ngModel)]="empresa">
+
+<br>
+<br>
+
+{{textoDeRegistro}}
+<br>
+
+Registrado: <input type="checkbox" id="registro" [checked]="usuRegistrado" (change)="setUsuarioRegistrado($event.target)">

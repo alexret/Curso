@@ -1,0 +1,20 @@
+<h1 style="text-align: center">{{titulo}}</h1>
+
+<form>
+
+  <input type="text" name = "nombre" [(ngModel)]="nombre"> <br>
+
+  <input type="text" name = "apellido" [(ngModel)]="apellido"> <br>
+
+  <input type="submit" value="registro" (click)="registrarUsuario()"> <br>
+
+
+</form>
+
+<br/>
+
+<p *ngIf="registrado">
+
+  {{mensaje}} con nombre {{nombre}} {{apellido }}
+
+</p>
